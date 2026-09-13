@@ -58,7 +58,7 @@ const statistics = computed(() => [
     <SectionLayout>
       <SectionTitle :title="t('statistics.title')" />
 
-      <div class="rounded-3xl bg-[#E9F2FF] px-8 py-12 sm:p-8">
+      <div class="rounded-3xl bg-[#E9F2FF] px-8 py-12 max-sm:px-4 max-sm:py-5">
         <div class="grid grid-cols-2 gap-y-6 lg:grid-cols-4">
           <div
             v-for="(item, index) in statistics"
@@ -82,7 +82,7 @@ const statistics = computed(() => [
             </div>
 
             <div class="min-w-0">
-              <p class="truncate text-4 text-black sm:text-xs">
+              <p class="truncate text-4 text-black max-sm:text-xs">
                 {{ item.label }}
               </p>
               <p

@@ -1,12 +1,56 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import MapSection from '~/components/map/MapSection.vue';
 import type { VideoItem } from '~/interface/HomePage';
 
 const { t } = useI18n();
 
 const activeTab = ref<'foto' | 'video'>('foto');
-const hoveredRegion = ref<string>(''); 
+const hoveredRegion = ref<string>('');
+
+const regionList = [
+  'Toshkent shahri',
+  'Andijon viloyati',
+  'Buxoro viloyati',
+  'Jizzax viloyati',
+  'Qashqadaryo viloyati',
+  'Navoiy viloyati',
+  'Samarqand viloyati',
+  'Surxondaryo viloyati',
+  'Sirdaryo viloyati',
+  'Toshkent viloyati',
+  "Farg'ona viloyati",
+  'Xorazm viloyati',
+  'Qoraqalpog‘iston Respublikasi',
+];
+
+const selectedRegion = ref('');
+const isRegionOpen = ref(false);
+const regionSelectRef = ref<HTMLElement | null>(null);
+
+const toggleRegionDropdown = () => {
+  isRegionOpen.value = !isRegionOpen.value;
+};
+
+const selectRegion = (region: string) => {
+  selectedRegion.value = region;
+  hoveredRegion.value = region;
+  isRegionOpen.value = false;
+};
+
+const handleClickOutside = (event: MouseEvent) => {
+  if (regionSelectRef.value && !regionSelectRef.value.contains(event.target as Node)) {
+    isRegionOpen.value = false;
+  }
+};
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleClickOutside);
+});
 
 const mediaList = ref([
   { id: 1, image: '/images/amir-temur-maydoni.webp' },
@@ -83,7 +127,7 @@ const handleRegionHover = (regionName: string) => {
 </script>
 
 <template>
-  <section id="regions" class="bg-[#F5F9FC] py-10 px-4 sm:px-6 lg:px-8">
+  <section id="regions" class="bg-[#F5F9FC] py-10 px-4 sm:px-6 lg:px-8 ">
     <div class="mx-auto max-w-[1200px]">
       
       <!-- Sarlavha -->
@@ -196,9 +240,9 @@ const handleRegionHover = (regionName: string) => {
 
         </div>
 
-        <!-- O'NG TOMON: Xarita (MapSection) -->
-        <div class="relative bg-gradient-to-br from-[#E4F0FB] to-[#D5E7F9] rounded-2xl p-4 flex items-center justify-center min-h-[400px] overflow-hidden border border-[#D9E7F6]">
-          
+        <!-- O'NG TOMON: Xarita (MapSection) - faqat desktop/tablet -->
+        <div class="relative hidden sm:flex bg-gradient-to-br from-[#E4F0FB] to-[#D5E7F9] rounded-2xl p-4 items-center justify-center min-h-[400px] overflow-hidden border border-[#D9E7F6]">
+
           <!-- Milliy naqsh foni (Opsional visual) -->
          <div class="absolute -top-10 -right-10 w-64 h-64 opacity-10 pointer-events-none">
             <img src="/images/pattern1.svg" alt="" class="w-full h-full" />
@@ -207,6 +251,48 @@ const handleRegionHover = (regionName: string) => {
           <!-- Xarita Komponenti -->
           <MapSection @hover-region="handleRegionHover" />
 
+        </div>
+
+        <!-- O'NG TOMON: Hududlarni tanlash (mobil) -->
+        <div ref="regionSelectRef" class="relative sm:hidden order-first">
+          <button
+            type="button"
+            @click="toggleRegionDropdown"
+            class="w-full flex items-center justify-between gap-2 bg-[#E9F2FF] border border-[#D9E7F6] rounded-full px-4 py-3.5 shadow-sm"
+          >
+            <span class="flex items-center gap-2 text-[16px] font-normal text-[#00000080]">
+              <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              {{ selectedRegion || t('regions.select_region') }}
+            </span>
+            <svg
+              class="w-4 h-4 text-gray-400 transition-transform duration-200 flex-shrink-0"
+              :class="{ 'rotate-180': isRegionOpen }"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+
+          <Transition name="media-fade">
+            <div
+              v-if="isRegionOpen"
+              class="absolute z-20 mt-2 w-full bg-white rounded-3xl shadow-lg border border-[#D9E7F6] max-h-80 overflow-y-auto py-2"
+            >
+              <button
+                v-for="region in regionList"
+                :key="region"
+                type="button"
+                @click="selectRegion(region)"
+                class="w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-[#F0F6FE] transition-colors"
+                :class="{ 'text-[#000] font-normal bg-[#F0F6FE]': selectedRegion === region }"
+              >
+                {{ region }}
+              </button>
+            </div>
+          </Transition>
         </div>
 
       </div>
