@@ -55,7 +55,7 @@ const query = ref("");
         class="relative z-[1] mt-6 block w-full max-w-[420px] cursor-pointer lg:absolute lg:right-0 lg:top-0 lg:z-[-5] lg:mt-0 lg:w-auto lg:max-w-none"
       >
         <img
-          src="/images/tashkent-content-market.svg"
+          src="/images/tashkent-content-market.webp"
           alt="Tashkent Content Market"
           class="h-auto w-full"
         />
