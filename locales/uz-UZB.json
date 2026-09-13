@@ -1,0 +1,134 @@
+{
+  "page": {
+    "title": "Har qadamda O‘zbekiston nafasi",
+    "description": "O‘zbekistonning eng go‘zal maskanlari, hududlari va sayohat yo‘nalishlarini kashf eting.",
+    "search_placeholder": "Qidiruv",
+    "language": "O‘zbekcha"
+  },
+  "navigation": {
+    "home": "Bosh sahifa",
+    "projects": "Loyihalar",
+    "travel_guides": "Sayohat qo‘llanmalari",
+    "about_us": "Biz haqimizda",
+    "menu": "Menyu",
+    "contact": "Aloqa",
+    "president": "Prezident",
+    "new_uzbekistan": "Yangi O‘zbekiston",
+    "infographics": "Infografika"
+  },
+  "hero": {
+    "title_top": "HAR KADRDA",
+    "title_bottom": "O‘ZBEKISTON NAFASI",
+    "search_placeholder": "Qayerga borishni xohlaysiz?"
+  },
+  "seasons_and_time": {
+    "title": "Kadr qanday fasl yoki vaqtda bo‘lsin?",
+    "winter": "Qish",
+    "spring": "Bahor",
+    "summer": "Yoz",
+    "autumn": "Kuz",
+    "day": "Kunduz",
+    "night": "Tun"
+  },
+  "regions": {
+    "title": "Hududlar bo‘yicha kontent",
+    "all_regions": "Barcha hududlar",
+    "region": "Hudud",
+    "view_more": "Ko‘proq ko‘rish",
+    "select_region": "Hududni tanlang"
+  },
+  "categories": {
+    "title": "Toifani tanlang",
+    "all": "Barchasi",
+    "culture": "Madaniyat",
+    "history": "Tarix",
+    "tourism": "Turizm",
+    "healthcare": "Sog‘liqni saqlash",
+    "education": "Ta’lim",
+    "infrastructure": "Infratuzilma"
+  },
+  "statistics": {
+    "title": "Statistika",
+    "monuments": "Yodgorliklar",
+    "total_materials": "Jami materiallar:",
+    "videos": "Videolar:",
+    "photos": "Rasmlar:",
+    "infographics": "Infografikalar:",
+    "regions": "Hududlar",
+    "projects": "Loyihalar",
+    "articles": "Maqolalar",
+    "users": "Foydalanuvchilar",
+    "views": "Ko‘rishlar",
+    "downloads": "Yuklab olishlar:",
+    "authors": "Mualliflar soni:",
+    "local_users": "Mahalliy foydalanuvchilar:",
+    "foreign_users": "Xorijiy foydalanuvchilar:",
+    "unit_pieces": "ta",
+    "unit_times": "marta"
+  },
+  "footer": {
+    "about_project": "Loyiha haqida",
+    "useful_links": "Foydali havolalar",
+    "privacy_policy": "Maxfiylik siyosati",
+    "terms_of_use": "Foydalanish shartlari",
+    "feedback": "Fikr-mulohaza",
+    "social_networks": "Ijtimoiy tarmoqlar",
+    "copyright": "Barcha huquqlar himoyalangan.",
+    "contact_title": "Aloqa",
+    "description": "Platformaning maqsadi — O‘zbekiston haqida yagona raqamli media arxivini yaratish, internet foydalanuvchilari uchun ochiq va qulay kirishni ta’minlash, xorijiy OAV bilan axborot almashinuvini kuchaytirish, shuningdek, mamlakat haqidagi ishonchli materiallarning yagona manbasini shakllantirishdir."
+  },
+  "common": {
+    "read_more": "Batafsil",
+    "watch": "Ko‘rish",
+    "listen": "Tinglash",
+    "download": "Yuklab olish",
+    "next": "Keyingi",
+    "previous": "Oldingi",
+    "close": "Yopish",
+    "search": "Qidirish",
+    "loading": "Yuklanmoqda",
+    "login": "Kirish",
+    "media": "Media",
+    "language": "Til",
+    "photo": "Foto",
+    "video": "Video",
+    "all": "Barchasi",
+    "back_home": "Bosh sahifaga qaytish",
+    "video_unavailable": "Video mavjud emas",
+    "infographics": "Infografika"
+  },
+  "tours": {
+    "for_you": "SIZ UCHUN",
+    "choose_recommendation": "Tavsiya tanlang",
+    "family": "Oilaviy sayohat",
+    "historical": "Tarixiy maskanlar",
+    "nature": "Tabiat qo‘ynida",
+    "city": "Shahar bo‘ylab"
+  },
+  "category_items": {
+    "infrastructure_construction": "Infratuzilma va qurilish",
+    "education_science": "Ta’lim va fan",
+    "healthcare": "Sog‘liqni saqlash",
+    "economy_business": "Iqtisodiyot va biznes",
+    "culture_art": "Madaniyat va san’at",
+    "sport": "Sport",
+    "technology": "Texnologiyalar"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "description": "Bu sahifa hozirda tayyorlanmoqda. Tez orada AURA jamoasi va loyiha haqida batafsil ma’lumot bilan qaytamiz."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Blog maqolalari hozirda tayyorlanmoqda. Tez orada sayohat va O‘zbekiston haqida qiziqarli maqolalar bilan qaytamiz."
+  },
+  "error": {
+    "not_found_title": "Sahifa topilmadi",
+    "generic_title": "Xatolik yuz berdi",
+    "not_found_desc": "Siz qidirayotgan sahifa mavjud emas yoki manzil noto‘g‘ri kiritilgan.",
+    "generic_desc": "Kutilmagan xatolik yuz berdi. Iltimos, birozdan so‘ng qayta urinib ko‘ring.",
+    "error_code": "Xatolik kodi:",
+    "go_back": "Orqaga qaytish",
+    "footer_note": "O‘zbekiston bo‘ylab sayohat va kashfiyotlar"
+  }
+}

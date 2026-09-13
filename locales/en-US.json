@@ -1,0 +1,134 @@
+{
+  "page": {
+    "title": "The Spirit of Uzbekistan in Every Step",
+    "description": "Discover the most beautiful places, regions, and travel destinations of Uzbekistan.",
+    "search_placeholder": "Search",
+    "language": "English"
+  },
+  "navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "travel_guides": "Travel Guides",
+    "about_us": "About Us",
+    "menu": "Menu",
+    "contact": "Contact",
+    "president": "President",
+    "new_uzbekistan": "New Uzbekistan",
+    "infographics": "Infographics"
+  },
+  "hero": {
+    "title_top": "IN EVERY FRAME",
+    "title_bottom": "THE SPIRIT OF UZBEKISTAN",
+    "search_placeholder": "Where do you want to go?"
+  },
+  "seasons_and_time": {
+    "title": "Which season or time of day should the shot show?",
+    "winter": "Winter",
+    "spring": "Spring",
+    "summer": "Summer",
+    "autumn": "Autumn",
+    "day": "Day",
+    "night": "Night"
+  },
+  "regions": {
+    "title": "Content by Region",
+    "all_regions": "All Regions",
+    "region": "Region",
+    "view_more": "View More",
+    "select_region": "Select a Region"
+  },
+  "categories": {
+    "title": "Choose a Category",
+    "all": "All",
+    "culture": "Culture",
+    "history": "History",
+    "tourism": "Tourism",
+    "healthcare": "Healthcare",
+    "education": "Education",
+    "infrastructure": "Infrastructure"
+  },
+  "statistics": {
+    "title": "Statistics",
+    "monuments": "Monuments",
+    "total_materials": "Total materials:",
+    "videos": "Videos:",
+    "photos": "Photos:",
+    "infographics": "Infographics:",
+    "regions": "Regions",
+    "projects": "Projects",
+    "articles": "Articles",
+    "users": "Users",
+    "views": "Views",
+    "downloads": "Downloads:",
+    "authors": "Number of authors:",
+    "local_users": "Local users:",
+    "foreign_users": "Foreign users:",
+    "unit_pieces": "pcs",
+    "unit_times": "times"
+  },
+  "footer": {
+    "about_project": "About the Project",
+    "useful_links": "Useful Links",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_use": "Terms of Use",
+    "feedback": "Feedback",
+    "social_networks": "Social Networks",
+    "copyright": "All rights reserved.",
+    "contact_title": "Contact",
+    "description": "The platform's goal is to create a unified digital media archive about Uzbekistan, provide open and convenient access for internet users, strengthen the exchange of information with foreign media, and form a single reliable source of materials about the country."
+  },
+  "common": {
+    "read_more": "Read More",
+    "watch": "Watch",
+    "listen": "Listen",
+    "download": "Download",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "search": "Search",
+    "loading": "Loading",
+    "login": "Log in",
+    "media": "Media",
+    "language": "Language",
+    "photo": "Photo",
+    "video": "Video",
+    "all": "All",
+    "back_home": "Back to Home",
+    "video_unavailable": "Video unavailable",
+    "infographics": "Infographics"
+  },
+  "tours": {
+    "for_you": "FOR YOU",
+    "choose_recommendation": "Choose a Recommendation",
+    "family": "Family Trip",
+    "historical": "Historical Sites",
+    "nature": "In the Heart of Nature",
+    "city": "Around the City"
+  },
+  "category_items": {
+    "infrastructure_construction": "Infrastructure & Construction",
+    "education_science": "Education & Science",
+    "healthcare": "Healthcare",
+    "economy_business": "Economy & Business",
+    "culture_art": "Culture & Art",
+    "sport": "Sport",
+    "technology": "Technology"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Information about the AURA project will be added soon."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Blog articles are being prepared. We'll be back soon with interesting articles about travel and Uzbekistan."
+  },
+  "error": {
+    "not_found_title": "Page Not Found",
+    "generic_title": "An Error Occurred",
+    "not_found_desc": "The page you are looking for does not exist or the address was entered incorrectly.",
+    "generic_desc": "An unexpected error occurred. Please try again shortly.",
+    "error_code": "Error code:",
+    "go_back": "Go Back",
+    "footer_note": "Travel and discoveries across Uzbekistan"
+  }
+}
